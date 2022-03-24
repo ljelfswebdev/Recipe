@@ -20,9 +20,9 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link href="/random" ><a className="nav-link"><h5>Random</h5></a></Link>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link href="/contact"><a className="nav-link"><h5>Contact</h5></a></Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
                 </>        
