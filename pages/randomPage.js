@@ -12,7 +12,6 @@ const RandomPage = (meal) => {
     //   console.log(meal)
     // }
 
-    
 
     return ( 
         <div className={styles.container}>
@@ -72,7 +71,7 @@ const RandomPage = (meal) => {
  
 export default RandomPage;
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
     const res = await axios.get("https://www.themealdb.com/api/json/v1/1/random.php");
     return {
       props: { meal: res.data },
