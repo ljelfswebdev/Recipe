@@ -28,7 +28,7 @@ const RandomPage = (meal) => {
             <div className="container mt-2">
               <div className="row text-center">
               <div className="card mb-3 col-md-6 offset-md-3 p-2 mt-3">
-                <img className="card-img-top" src={meal.meal.meals[0].strMealThumb} width={500} height={500} alt="Card image cap"/>
+                <img className="card-img-top img-fluid" src={meal.meal.meals[0].strMealThumb} width={500} height={500} alt="Card image cap"/>
                 <div className="card-body">
                     <h5 className="card-title">{meal.meal.meals[0].strMeal}</h5>
                     <p className="card-text">{meal.meal.meals[0].strInstructions}</p>
