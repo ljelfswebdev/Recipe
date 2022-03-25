@@ -12,6 +12,10 @@ const RandomPage = (meal) => {
     //   console.log(meal)
     // }
 
+    function refreshPage() {
+      window.location.reload()
+    };
+
     
 
     return ( 
@@ -49,11 +53,11 @@ const RandomPage = (meal) => {
                         <button className="btn btn-primary mx-5 mb-3">Go Back</button>
                     </a>
                     </Link>
-                    <Link href="/randomPage">
-                    <a>
-                        <button className="btn btn-success mx-5 mb-3">New Recipe</button>
-                    </a>
-                    </Link>
+                    {/* <Link href="/randomPage">
+                    <a> */}
+                        <button className="btn btn-success mx-5 mb-3" onClick={() => refreshPage()} >New Recipe</button>
+                    {/* </a>
+                    </Link> */}
                 </div>
                 
                 
